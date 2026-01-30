@@ -275,6 +275,8 @@ class protocol_settings:
         self.protocol = protocol
         self.settings_dir = settings_dir
         self.transport_settings = transport_settings
+        self.codes = {}
+        self.settings = {}
 
         #load variable mask
         self.variable_mask = []
