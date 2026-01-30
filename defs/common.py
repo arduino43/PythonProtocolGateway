@@ -11,6 +11,12 @@ def strtobool (val):
     if isinstance(val, bool):
         return val
 
+    if isinstance(val, int):
+        return 1 if val else 0
+
+    if val is None:
+        return 0
+
     val = val.lower()
     if val in ("y", "yes", "t", "true", "on", "1"):
         return 1
